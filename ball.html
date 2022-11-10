@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <div id="ball"></div>
+    <div id="block"></div>
+    <script>
+    </script>
+    </body>
+    <head>
+        <style>
+            body {
+                background-color: black;
+            }
+            #block {
+                background-color:rgb(33, 33, 33);
+                width: 800px;
+                height: 600px;
+                border-radius: 50px;
+                position: absolute;
+                top: 150px;
+                left: 600px;
+                z-index: -1;
+            }
+            #ball {
+                width: 70px;
+                height: 70px;
+                background-color: rgb(255, 0, 0);
+                box-shadow: 0 0 40px rgb(255, 0, 0);
+                border-radius: 50px;
+                position: absolute;
+                top: 200px;
+                left: 959px;
+            }
+            #ball {
+                animation: linear infinite;
+                animation-duration: 2s;
+                animation-name: BouncingBall;
+            }
+            @keyframes BouncingBall{
+                50% {top: 675px;}
+                100% {top: 200px;}
+            }
+        </style>
+    </head>
+</html>
